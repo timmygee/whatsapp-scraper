@@ -36,7 +36,6 @@ old_length = -1
 
 while len(contacts) != old_length:
     items = soup.select('#pane-side > div > div > div > div > div > div > div._3j7s9 > div._2FBdJ > div._25Ooe > span > span')
-    print(items)
     old_length = len(contacts)
     contacts.update({ item.string: None for item in items })
     # Scroll the contact list by the container height
